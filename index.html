@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="background-music" controls loop>
+        <source src="background.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <div class="game-container">
+        <h1>Blackjack</h1>
+
+        <div class="hand">
+            <h2>Dealer's Hand</h2>
+            <div id="dealer-cards" class="card-container"></div>
+            <p id="dealer-score">Score: ?</p>
+        </div>
+
+        <div class="hand">
+            <h2>Your Hand</h2>
+            <div id="player-cards" class="card-container"></div>
+            <p id="player-score">Score: 0</p>
+        </div>
+
+        <div class="buttons">
+            <button id="hit-btn">Hit</button>
+            <button id="stand-btn">Stand</button>
+            <button id="restart-btn">New Game</button>
+        </div>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
